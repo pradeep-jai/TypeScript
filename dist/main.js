@@ -119,4 +119,41 @@ class User {
     }
 }
 let person1 = new User("Pradeep", 28);
+// Generic Concepts
+function merge(obja, objb) {
+    return Object.assign(obja, objb);
+}
+const data = merge({ name: "pradeep" }, { age: 27 });
+console.log(data.age);
+// Another Example of Generic
+function merge1(obja, objb) {
+    return Object.assign(obja, objb);
+}
+const data1 = merge1({ name: "pradeep" }, { age: 27 });
+console.log(data1.age);
+// Key of Generic concepts
+function extractFromObject(obj, key) {
+    return obj[key];
+}
+console.log(extractFromObject({ name: 'pradeep', age: 28 }, 'age'));
+// Another for class 
+class Student {
+    constructor() {
+        this.items = [];
+    }
+    pushItems(item) {
+        this.items.push(item);
+    }
+    getItems() {
+        console.log(this.items);
+    }
+}
+let student = new Student();
+student.pushItems("pradeep");
+student.pushItems("jai");
+student.getItems();
+let student1 = new Student();
+student1.pushItems(1);
+student1.pushItems(2);
+student1.getItems();
 //# sourceMappingURL=main.js.map
