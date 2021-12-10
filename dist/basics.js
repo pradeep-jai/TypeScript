@@ -22,7 +22,7 @@ let myName = undefined;
 let list1 = [1, 2, 3];
 let list2 = [1, 2, 3];
 // Tuple type
-let person1 = ['Chris', 22];
+let person12 = ['Chris', 22];
 // Enum type
 var Color;
 (function (Color) {
